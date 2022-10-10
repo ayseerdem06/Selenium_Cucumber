@@ -7,7 +7,8 @@ import org.openqa.selenium.Keys;
 import pages.AmazonPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-public class AmazonStepDefinition {
+public class AmazonStepDefinitions {
+
     AmazonPage amazonPage=new AmazonPage();
     @Given("kullanici amazon sayfasina gider")
     public void kullaniciAmazonSayfasinaGider() {
