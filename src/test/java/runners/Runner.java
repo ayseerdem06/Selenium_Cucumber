@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@Background",       // @All yazarsak hepsini birden çalıstirir
+        tags = "@USOutline",       // @All yazarsak hepsini birden çalıstirir
         dryRun = false        // true olduğunda browsere arka planda yaparak testi gerçeklestirir
 
 )

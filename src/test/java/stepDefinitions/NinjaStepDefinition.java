@@ -11,7 +11,7 @@ import utilities.Driver;
 import java.util.ArrayList;
 import java.util.List;
 
-public class NinjaStepDefinitions {
+public class NinjaStepDefinition {
 
     NinjaPage ninjaPage=new NinjaPage();
     List<String> telefonIsimleri=new ArrayList<>();

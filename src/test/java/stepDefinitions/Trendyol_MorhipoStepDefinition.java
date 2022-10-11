@@ -4,18 +4,12 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
-import org.openqa.selenium.interactions.Actions;
 import pages.Trendyol_MorhipoPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-public class Trendyol_MorhipoStepDefinitions {
+public class Trendyol_MorhipoStepDefinition {
 
     Trendyol_MorhipoPage trendyolMorhipo=new Trendyol_MorhipoPage();
 
