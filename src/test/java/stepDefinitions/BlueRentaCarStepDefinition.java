@@ -53,4 +53,47 @@ public class BlueRentaCarStepDefinition {
     public void kulllaniciSayfayiKapatir() {
         Driver.closeDriver();
     }
+
+
+
+    @Given("kullanici {string} anasayfasina gider")
+    public void kullaniciAnasayfasinaGider(String arg0) {
+        Driver.getDriver().get(ConfigReader.getProperty("brcUrl"));
+    }
+
+    @And("{string} username girer")
+    public void usernameGirer(String gecersizemail) {
+        brcPage.emailTexBox.sendKeys(gecersizemail);
+    }
+
+    @And("{string} password girer")
+    public void passwordGirer(String gecersizPassword) {
+        brcPage.passwordTexBox.sendKeys(gecersizPassword);
+    }
+
+    @And("brc Login butonuna basar")
+    public void brcLoginButonunaBasar() {
+        brcPage.ikinciLoginButonu.click();
+    }
+
+    @Then("brc sayfasina giris yapilamadigini kontrol eder")
+    public void brcSayfasinaGirisYapilamadiginiKontrolEder() {
+        String expectedUrl="https://www.bluerentalcars.com/login";
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(expectedUrl,actualUrl);
+    }
+
+    @And("kullanici {int} sn bekler")
+    public void kullaniciSnBekler(int beklemeSuresi) {
+        try {
+            Thread.sleep(beklemeSuresi*2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @And("kullanici sayfayi kapatir")
+    public void kullaniciSayfayiKapatir() {
+        Driver.closeDriver();
+    }
 }
