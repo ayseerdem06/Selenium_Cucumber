@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@USOutline",       // @All yazarsak hepsini birden çalıstirir
-        dryRun = false        // true olduğunda browsere arka planda yaparak testi gerçeklestirir
+        tags = "@PracticeAmazon",       // @All yazarsak hepsini birden çalıstirir
+        dryRun = true        // true olduğunda browsere arka planda yaparak testi gerçeklestirir
 
 )
 
