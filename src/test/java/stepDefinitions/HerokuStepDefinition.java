@@ -6,6 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.HerokuPage;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 import java.time.Duration;
@@ -16,7 +17,7 @@ public class HerokuStepDefinition {
 
     @And("kullanici {string}  adresine gider")
     public void kullaniciAdresineGider(String arg0) {
-        Driver.getDriver().get("herokuUrl");
+        Driver.getDriver().get(ConfigReader.getProperty("herokuUrl"));
     }
 
     @And("kullanici {string} butonuna tiklar")
