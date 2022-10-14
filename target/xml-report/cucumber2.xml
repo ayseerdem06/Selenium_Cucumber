@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="23.051">
+    <testcase classname="Amazon Search" name="TC02 kullanici amazonda Selenium aratir" time="22.218">
+        <system-out>
+            <![CDATA[Given kullanici amazon sayfasina gider......................................passed
+Then kullanici Selenium icin arama yapar....................................passed
+And sonuclarin Selenium icerdigini test eder................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

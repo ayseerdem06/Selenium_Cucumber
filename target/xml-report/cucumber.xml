@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="42.335">
+    <testcase classname="US014 Class Work" name="Kullanici ve Url Testi" time="41.091">
+        <system-out>
+            <![CDATA[Given kullanici "webUrl" anasayfasinda......................................passed
+Then kullanici Login Portala kadar asagi iner...............................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici Login Portala tiklar..........................................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici diger windowa gecer...........................................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici "username" kutusuna bilgileri girer...........................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici "password" bolumune bilgileri girer...........................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici login butonuna basar..........................................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici Popup'ta cikan yazinin validation failed oldugunu test eder...passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici Ok diyerek Popup'i kapatir....................................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici ilk sayfaya geri doner........................................passed
+When kullanici 2 saniye bekler..............................................passed
+And kullanici ilk sayfaya donuldugunu test eder.............................passed
+When kullanici 2 saniye bekler..............................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

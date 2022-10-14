@@ -8,7 +8,7 @@ Feature: US003 Parametre Kullanimi
     Then kullanici "nutella" icin arama yapar
     And sonuclarin "nutella" icerdigini test eder
     And sayfayi kapatir
-
+@gp5
   Scenario: TC02 Kullanici amazonda parametreli arama yapar
     Then kullanici "selenium" icin arama yapar
     And sonuclarin "selenium" icerdigini test eder
