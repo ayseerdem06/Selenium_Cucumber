@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml" },
 
         features = "src/test/resources/features",
-        glue = "stepDefinitions",
+        glue = "practiceForm",
         tags = "@web",       // @All yazarsak hepsini birden çalıstirir
         dryRun = false        // true olduğunda browsere arka planda yaparak testi gerçeklestirir
 
