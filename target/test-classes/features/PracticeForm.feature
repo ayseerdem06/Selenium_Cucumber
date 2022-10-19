@@ -17,3 +17,4 @@ Feature: Form doldurma
     Examples:
       | kullanici adi | sifre | metin alani |
       | kullanici adi | sifre | metin alani |
+      | kullanici adi | sifre | metin alani |

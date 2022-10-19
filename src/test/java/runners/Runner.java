@@ -1,29 +1,25 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
-
         plugin={"html:target\\cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml" },
 
         features = "src/test/resources/features",
-        glue = "practiceForm",
-        tags = "@web",       // @All yazarsak hepsini birden çalıstirir
-        dryRun = false        // true olduğunda browsere arka planda yaparak testi gerçeklestirir
-
+        glue = "stepDefinitions",
+        tags= "@medunna",
+        dryRun = false
 )
+
 
 
 public class Runner {
 
-
-      /*
+    /*
      Runner Class'ı TestNG'deki XMl mantığı ile çalışır. Çalıştırmak istediğimiz senartolara tag belirtiriz
     ve belirttiğimiz tag'ları çalıştırır. XMl deki gibi istediğimiz testleri çalıştırmak için kullanırız.
     Runner class body'si boştur ve runner class'ını ekleyeceğimiz notasyonlar aktive eder.
@@ -34,10 +30,15 @@ public class Runner {
     features : Runeer dosyasının feature dosyasını nereden bulacağını tarif eder
     glue : stepDefinitions yolunu belirtiriz
     tags : Hangi tag'i çalıştırmak istiyorsak onu belli eder
+
     dryRun : iki seçenek vardır
     dryRun = true; dersek testimizi çalıştırmadan eksik adımları bize verir
     dryRun = false; testlerimizi driver ile çalıştırır.
      */
+
+
+
+
 
 
 }
