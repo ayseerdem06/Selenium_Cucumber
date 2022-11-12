@@ -34,11 +34,11 @@ public class GridStepDefs {
     }
 
 
-  // @Given("user is on the application_url with firefox {string}")
-  // public void userIsOnTheApplication_urlWithFirefox(String url) throws MalformedURLException {
-  //     driver = new RemoteWebDriver(new URL("http://172.16.68.49:4444"),new FirefoxOptions());
-  //     driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-  //     driver.manage().window().maximize();
-  //     driver.get(url);
-  // }
+   @Given("user is on the application_url with firefox {string}")
+   public void userIsOnTheApplication_urlWithFirefox(String url) throws MalformedURLException {
+       driver = new RemoteWebDriver(new URL("http://172.16.68.49:4444"),new FirefoxOptions());
+       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+       driver.manage().window().maximize();
+       driver.get(url);
+   }
 }

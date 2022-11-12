@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="41.338">
+    <testcase classname="app_title_verification" name="TC01_title_on_chrome" time="21.025">
+        <system-out>
+            <![CDATA[Given user is on the application_url "https://www.bluerentalcars.com/"......passed
+Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire".passed
+Then close the remote driver................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="app_title_verification" name="TC01_title_on_firefox" time="18.963">
+        <system-out>
+            <![CDATA[Given user is on the application_url with firefox "https://www.bluerentalcars.com/".passed
+Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire".passed
+Then close the remote driver................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

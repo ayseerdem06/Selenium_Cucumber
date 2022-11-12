@@ -6,3 +6,8 @@ Feature: app_title_verification
     Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire"
     Then close the remote driver
 
+  @grid_firefox
+  Scenario: TC01_title_on_firefox
+    Given user is on the application_url with firefox "https://www.bluerentalcars.com/"
+    Then verify the page title is "Blue Rental Cars | Cheap, Hygienic, VIP Car Hire"
+    Then close the remote driver
